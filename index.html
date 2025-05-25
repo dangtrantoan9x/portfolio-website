@@ -24,11 +24,32 @@
 
     <!--=============== CSS ===============-->
     <link rel="stylesheet" href="assets/css/styles.css">
+  
+
+<!-- ---------------------------------- -->
+
+ <!-- GLightbox CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/glightbox/dist/css/glightbox.min.css">
 
     <title> Dang Toan Portfolio </title>
 </head>
 
 <body>
+    <!-- ---------------------- -->
+       <!-- GLightbox JS -->
+    <script src="https://cdn.jsdelivr.net/gh/mcstudios/glightbox/dist/js/glightbox.min.js"></script>
+    <!-- Khởi tạo GLightbox -->
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            const lightbox = GLightbox({
+                selector: '.glightbox',  // Class của thẻ <a> bạn muốn mở lightbox
+                touchNavigation: true,    // Cho phép vuốt trên mobile
+                keyboardNavigation: true, // Cho phép dùng phím mũi tên
+                closeButton: true,       // Hiện nút đóng
+                loop: true,              // Cho phép lặp lại khi đến ảnh cuối
+            });
+        });
+    </script>
     <!--=============== HEADER ===============-->
     <header class="header" id="header">
         <nav class="nav container">
@@ -122,7 +143,7 @@
             <h2 class="section__title">Bản thân mình</h2>
 
             <div class="about__container container grid">
-                <img src="assets/img/img02.jpg" alt="" class="about__img">
+                <img src="assets/img/img06.png" alt="" class="about__img">
 
                 <div class="about__data">
                     <div class="about__info">
@@ -426,6 +447,7 @@ Mình yêu thích việc giải quyết vấn đề bằng thiết kế, luôn �
                 <span class="work__item active-work" data-filter='all'>Tất cả</span>
                 <span class=" work__item" data-filter='.web'>Website</span>
                 <span class=" work__item" data-filter='.movil'>Mobile app</span>
+                 <span class=" work__item" data-filter='.design'>Design</span>
               
             </div>
 
@@ -481,6 +503,34 @@ Mình yêu thích việc giải quyết vấn đề bằng thiết kế, luôn �
                         Xem thêm <i class='bx bx-right-arrow work__icon'></i>
                     </a>
                 </div>
+
+
+                 <!-- <div class="work__card mix design">
+                    <img src="assets/img/work3.jpg" alt="" class="work__img">
+
+                    <h3 class="work__title">Poster</h3>
+
+                    <a href="#" class="work__button">
+                        Demo <i class='bx bx-right-arrow work__icon'></i>
+                    </a>
+                </div> -->
+
+             
+<!-- ---------- -->
+<div class="work__card mix design">
+    <img src="assets/img/poster.png" alt="" class="work__img">
+    <h3 class="work__title">Poster</h3>
+    <a href="assets/img/1.png" class="work__button glightbox" data-gallery="gallery1">
+        Xem thêm <i class='bx bx-right-arrow work__icon'></i>
+    </a>
+</div>
+
+<!-- Các ảnh khác trong cùng gallery -->
+<div style="display: none;"> <!-- Có thể dùng `display: none` hoặc class tùy bạn -->
+    <a href="assets/img/2.png" class="glightbox" data-gallery="gallery1"></a>
+    <a href="assets/img/3.jpg" class="glightbox" data-gallery="gallery1"></a>
+</div>
+<!-- -------- -->
 
             </div>
         </section>
@@ -673,6 +723,8 @@ Mình yêu thích việc giải quyết vấn đề bằng thiết kế, luôn �
 
     <!--=============== MAIN JS ===============-->
     <script src="assets/js/main.js"></script>
+ <!-- -------------------- -->
+
 </body>
 
 </html>

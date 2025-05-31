@@ -17,11 +17,12 @@
   --sat: 66%;
   --lig: 75%;
   --second-hue: 219;
-  --first-color: hsl(var(--first-hue), var(--sat), var(--lig));
-  --first-color-alt: hsl(var(--first-hue), var(--sat), 71%); /* -4% */
+  /* --first-color: hsl(var(--first-hue), var(--sat), var(--lig)); */
+  --first-color: hsl(67.02deg 100% 50%);
+  --first-color-alt: hsl(67.02deg 100% 74.01%);
   --title-color: hsl(var(--second-hue), 15%, 95%);
-  --text-color: hsl(var(--second-hue), 8%, 75%);
-  --text-color-light: hsl(var(--second-hue), 4%, 55%);
+  --text-color: hsl(0deg 0% 100%);
+  --text-color-light: hsl(0deg 0% 100%);
   --body-color: hsl(var(--second-hue), 48%, 8%);
   --container-color: hsl(var(--second-hue), 32%, 12%);
 
@@ -431,14 +432,6 @@ body.light-theme {
 .home__social-link:hover {
   background-color: var(--first-color);
   color: #ffffff;
-}
-
-.home__social::after {
-  content: "";
-  width: 32px;
-  height: 1px;
-  background-color: var(--first-color);
-  transform: rotate(90deg) translate(16px, 4px);
 }
 
 .home__scroll {
@@ -1268,7 +1261,6 @@ body.light-theme {
 }
 /* --------------- */
 body {
-  background-color: #fee440;
   margin: 0;
   padding: 0;
 }

@@ -1,753 +1,734 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-    <!--=============== FAVICON11 ===============-->
-    <link rel="apple-touch-icon" sizes="180x180" href="assets/favicons/apple-touch-icon.png">
-    <link rel="icon" type="image/png" sizes="32x32" href="assets/favicons/favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="assets/favicons/favicon-16x16.png">
-    <link rel="manifest" href="assets/favicons/site.webmanifest">
-    <link rel="mask-icon" href="assets/favicons/safari-pinned-tab.svg" color="#5bbad5">
-    <link rel="shortcut icon" href="assets/favicons/favicon.ico">
-    <meta name="msapplication-TileColor" content="#da532c">
-    <meta name="msapplication-config" content="assets/favicons/browserconfig.xml">
-    <meta name="theme-color" content="#a789d4">
-
-    <!--=============== BOXICONS ===============-->
-    <link href='https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css' rel='stylesheet'>
-
-    <!--=============== SWIPER CSS ===============-->
-    <link rel="stylesheet" href="assets/css/swiper-bundle.min.css">
-
-    <!--=============== CSS ===============-->
-    <link rel="stylesheet" href="assets/css/styles.css">
-  
-
-<!-- ---------------------------------- -->
-
- <!-- GLightbox CSS -->
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/glightbox/dist/css/glightbox.min.css">
-
-    <title> Dang Toan Portfolio </title>
-</head>
-
-<body>
-
-<svg preserveAspectRatio="xMidYMid slice" viewBox="10 10 80 80">
-        <defs>
+   <head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <!--=============== FAVICON11 ===============-->
+      <link rel="apple-touch-icon" sizes="180x180" href="assets/favicons/apple-touch-icon.png">
+      <link rel="icon" type="image/png" sizes="32x32" href="assets/favicons/favicon-32x32.png">
+      <link rel="icon" type="image/png" sizes="16x16" href="assets/favicons/favicon-16x16.png">
+      <link rel="manifest" href="assets/favicons/site.webmanifest">
+      <link rel="mask-icon" href="assets/favicons/safari-pinned-tab.svg" color="#5bbad5">
+      <link rel="shortcut icon" href="assets/favicons/favicon.ico">
+      <meta name="msapplication-TileColor" content="#da532c">
+      <meta name="msapplication-config" content="assets/favicons/browserconfig.xml">
+      <meta name="theme-color" content="#a789d4">
+      <!--=============== BOXICONS ===============-->
+      <link href='https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css' rel='stylesheet'>
+      <!--=============== SWIPER CSS ===============-->
+      <link rel="stylesheet" href="assets/css/swiper-bundle.min.css">
+      <!--=============== CSS ===============-->
+      <link rel="stylesheet" href="assets/css/styles.css">
+      <!-- ---------------------------------- -->
+      <!-- GLightbox CSS -->
+      <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/glightbox/dist/css/glightbox.min.css">
+      <title> Dang Toan Portfolio </title>
+   </head>
+   <body>
+      <svg preserveAspectRatio="xMidYMid slice" viewBox="10 10 80 80">
+         <defs>
             <style>
-                @keyframes rotate {
-                    0% {
-                        transform: rotate(0deg);
-                    }
-                    100% {
-                        transform: rotate(360deg);
-                    }
-                }
+               @keyframes rotate {
+               0% {
+               transform: rotate(0deg);
+               }
+               100% {
+               transform: rotate(360deg);
+               }
+               }
             </style>
-        </defs>
-        <path fill="#9b5de5" class="out-top" d="M37-5C25.1-14.7,5.7-19.1-9.2-10-28.5,1.8-32.7,31.1-19.8,49c15.5,21.5,52.6,22,67.2,2.3C59.4,35,53.7,8.5,37-5Z"/>
-        <path fill="#f15bb5" class="in-top" d="M20.6,4.1C11.6,1.5-1.9,2.5-8,11.2-16.3,23.1-8.2,45.6,7.4,50S42.1,38.9,41,24.5C40.2,14.1,29.4,6.6,20.6,4.1Z"/>
-        <path fill="#00bbf9" class="out-bottom" d="M105.9,48.6c-12.4-8.2-29.3-4.8-39.4,0.8-23.4,12.8-37.7,51.9-19.1,74.1s63.9,15.3,76-5.6c7.6-13.3,1.8-31.1-2.3-43.8C117.6,63.3,114.7,54.3,105.9,48.6Z"/>
-        <path fill="#00f5d4" class="in-bottom" d="M102,67.1c-9.6-6.1-22-3.1-29.5,2-15.4,10.7-19.6,37.5-7.6,47.8s35.9,3.9,44.5-12.5C115.5,92.6,113.9,74.6,102,67.1Z"/>
-    </svg>
-
-
-
-    <!-- ---------------------- -->
-       <!-- GLightbox JS -->
-    <script src="https://cdn.jsdelivr.net/gh/mcstudios/glightbox/dist/js/glightbox.min.js"></script>
-    <!-- Khởi tạo GLightbox -->
-    <script>
-        document.addEventListener('DOMContentLoaded', function() {
-            const lightbox = GLightbox({
-                selector: '.glightbox',  // Class của thẻ <a> bạn muốn mở lightbox
-                touchNavigation: true,    // Cho phép vuốt trên mobile
-                keyboardNavigation: true, // Cho phép dùng phím mũi tên
-                closeButton: true,       // Hiện nút đóng
-                loop: true,              // Cho phép lặp lại khi đến ảnh cuối
-            });
-        });
-    </script>
-    <!--=============== HEADER ===============-->
-    <header class="header" id="header">
-        <nav class="nav container">
+         </defs>
+         <path fill="#9b5de5" class="out-top" d="M37-5C25.1-14.7,5.7-19.1-9.2-10-28.5,1.8-32.7,31.1-19.8,49c15.5,21.5,52.6,22,67.2,2.3C59.4,35,53.7,8.5,37-5Z"/>
+         <path fill="#f15bb5" class="in-top" d="M20.6,4.1C11.6,1.5-1.9,2.5-8,11.2-16.3,23.1-8.2,45.6,7.4,50S42.1,38.9,41,24.5C40.2,14.1,29.4,6.6,20.6,4.1Z"/>
+         <path fill="#00bbf9" class="out-bottom" d="M105.9,48.6c-12.4-8.2-29.3-4.8-39.4,0.8-23.4,12.8-37.7,51.9-19.1,74.1s63.9,15.3,76-5.6c7.6-13.3,1.8-31.1-2.3-43.8C117.6,63.3,114.7,54.3,105.9,48.6Z"/>
+         <path fill="#00f5d4" class="in-bottom" d="M102,67.1c-9.6-6.1-22-3.1-29.5,2-15.4,10.7-19.6,37.5-7.6,47.8s35.9,3.9,44.5-12.5C115.5,92.6,113.9,74.6,102,67.1Z"/>
+      </svg>
+      <!-- ---------------------- -->
+      <!-- GLightbox JS -->
+      <script src="https://cdn.jsdelivr.net/gh/mcstudios/glightbox/dist/js/glightbox.min.js"></script>
+      <!-- Khởi tạo GLightbox -->
+      <script>
+         document.addEventListener('DOMContentLoaded', function() {
+             const lightbox = GLightbox({
+                 selector: '.glightbox',  // Class của thẻ <a> bạn muốn mở lightbox
+                 touchNavigation: true,    // Cho phép vuốt trên mobile
+                 keyboardNavigation: true, // Cho phép dùng phím mũi tên
+                 closeButton: true,       // Hiện nút đóng
+                 loop: true,              // Cho phép lặp lại khi đến ảnh cuối
+             });
+         });
+      </script>
+      <!--=============== HEADER ===============-->
+      <header class="header" id="header">
+         <nav class="nav container">
             <a href="#" class="nav__logo">Đăng Toàn</a>
-
             <div class="nav__menu">
-                <ul class="nav__list">
-                    <li class="nav__item ">
-                        <a href="#home" class="nav__link">
-                            <i class='bx bx-home'></i>
-                        </a>
-                    </li>
-
-                    <li class="nav__item ">
-                        <a href="#about" class="nav__link">
-                            <i class='bx bx-user'></i>
-                        </a>
-                    </li>
-
-                    <li class="nav__item">
-                        <a href="#skills" class="nav__link">
-                            <i class='bx bx-book'></i>
-                        </a>
-                    </li>
-
-                    <li class="nav__item">
-                        <a href="#work" class="nav__link">
-                            <i class='bx bx-briefcase-alt-2'></i>
-                        </a>
-                    </li>
-
-                    <li class="nav__item">
-                        <a href="#contact" class="nav__link">
-                            <i class='bx bx-message-square-dots'></i>
-                        </a>
-                    </li>
-                </ul>
+               <ul class="nav__list">
+                  <li class="nav__item ">
+                     <a href="#home" class="nav__link">
+                     <i class='bx bx-home'></i>
+                     </a>
+                  </li>
+                  <li class="nav__item ">
+                     <a href="#about" class="nav__link">
+                     <i class='bx bx-user'></i>
+                     </a>
+                  </li>
+                  <li class="nav__item">
+                     <a href="#skills" class="nav__link">
+                     <i class='bx bx-book'></i>
+                     </a>
+                  </li>
+                  <li class="nav__item">
+                     <a href="#work" class="nav__link">
+                     <i class='bx bx-briefcase-alt-2'></i>
+                     </a>
+                  </li>
+                  <li class="nav__item">
+                     <a href="#contact" class="nav__link">
+                     <i class='bx bx-message-square-dots'></i>
+                     </a>
+                  </li>
+               </ul>
             </div>
-
-
-        </nav>
-    </header>
-
-    <!--=============== MAIN ===============-->
-    <main class="main">
-        <!--=============== HOME ===============-->
-        <section class="home section" id="home">
+         </nav>
+      </header>
+      <!--=============== MAIN ===============-->
+      <main class="main">
+       
+         <!--=============== HOME ===============-->
+         <section class="home section" id="home">
             <div class="home__container container grid">
-                <div class="home__data">
-                    <span class="home__greeting">Xin chào</span>
-                    <h1 class="home__name">Mình là <br/> Đặng Trần Toàn</h1>
-                    <h3 class="home__education">Junior UI/UX Designer & Graphic Designer</h3>
-
-                    <div class="home__button">
-                        <a download="" target="_blank" href="assets/pdf/CV_DANG_TRAN_TOAN.pdf" class="button button--ghost">
-                            Tải CV
-                        </a>
-
-                        <a href="#about" class="button">Bản thân</a>
-                    </div>
-                </div>
-                  
-                <div class="home__handle">
-                  <div class="card">
-                              <img style="position: absolute; z-index: 1;" src="assets/img/img06.png" alt="" class="home__img">
+               <div class="home__data">
+                  <span class="home__greeting">Xin chào</span>
+                  <h1 class="home__name">Mình là <br/> Đặng Trần Toàn</h1>
+                  <h3 class="home__education">Junior UI/UX Designer & Graphic Designer</h3>
+                  <div class="home__button">
+                     <a download="" target="_blank" href="assets/pdf/CV_DANG_TRAN_TOAN.pdf" class="button button--ghost">
+                     Tải CV
+                     </a>
+                     <a href="#about" class="button">Bản thân</a>
                   </div>
-          
-                </div>
-
-                <div class="home__social">
-                    <a href="#" target="_blank" class="home__social-link">
-                        <i class='bx bxl-linkedin'></i>
-                    </a>
-                    <a href="#" target="_blank" class="home__social-link">
-                        <i class='bx bxl-github'></i>
-                    </a>
-                    <a href="#" target="_blank" class="home__social-link">
-                        <i class='bx bxl-dribbble'></i>
-                    </a>
-                </div>
-
-                <a href="#about" class="home__scroll">
-                    <i class='bx bx-mouse home__scroll-icon'></i>
-                    <span class="home__scroll-name">Trượt xuống</span>
-                </a>
+               </div>
+               <div class="home__handle">
+                  <div class="card">
+                     <img style="position: absolute; z-index: 1;" src="assets/img/img06.png" alt="" class="home__img">
+                  </div>
+               </div>
+               <div class="home__social">
+                  <a href="#" target="_blank" class="home__social-link">
+                  <i class='bx bxl-linkedin'></i>
+                  </a>
+                  <a href="#" target="_blank" class="home__social-link">
+                  <i class='bx bxl-github'></i>
+                  </a>
+                  <a href="#" target="_blank" class="home__social-link">
+                  <i class='bx bxl-dribbble'></i>
+                  </a>
+               </div>
+               <a href="#about" class="home__scroll">
+               <i class='bx bx-mouse home__scroll-icon'></i>
+               <span class="home__scroll-name">Trượt xuống</span>
+               </a>
             </div>
-        </section>
-
-        <!--=============== ABOUT ===============-->
-        <section class="about section" id="about">
+         </section>
+         <!--=============== ABOUT ===============-->
+         <section class="about section" id="about">
             <span class="section__subtitle">Giới thiệu</span>
             <h2 class="section__title">Bản thân mình</h2>
-
             <div class="about__container container grid">
-                <img src="assets/img/img06.png" alt="" class="about__img">
-
-                <div class="about__data">
-                    <div class="about__info">
-                        <div class="about__box">
-                            <i class='bx bx-award about__icon'></i>
-                            <h3 class="about__title">Kinh nghiệm</h3>
-                            <span class="about__subtitle">3 năm làm việc</span>
-                        </div>
-                        <div class="about__box">
-                            <i class='bx bx-briefcase-alt about__icon'></i>
-                            <h3 class="about__title">Học vấn</h3>
-                            <span class="about__subtitle">Công nghệ thông tin</span>
-                        </div>
-                        <div class="about__box">
-                            <i class='bx bx-support about__icon'></i>
-                            <h3 class="about__title">Hỗ trợ</h3>
-                            <span class="about__subtitle">Trực tuyến 24/7</span>
-                        </div>
-                    </div>
-
-                    <p class="about__description">
-                       Mình là Graphic Designer và UI/UX Designer với kinh nghiệm trong việc thiết kế giao diện trực quan, thân thiện và tối ưu hóa trải nghiệm người dùng. Mình đam mê sáng tạo hình ảnh và xây dựng các giải pháp thiết kế hiệu quả để truyền tải thông điệp một cách rõ ràng và hấp dẫn. Trong vai trò Graphic Designer, mình đã thực hiện nhiều ấn phẩm truyền thông như poster, banner, social media visual, branding identity, giúp tăng nhận diện thương hiệu và thu hút khách hàng mục tiêu.
-Mình yêu thích việc giải quyết vấn đề bằng thiết kế, luôn đặt người dùng làm trung tâm trong mọi sản phẩm và chú trọng đến tính nhất quán giữa giao diện và thương hiệu. Mục tiêu của mình là tạo ra những sản phẩm vừa đẹp mắt vừa mang lại giá trị thực tiễn.
-                    </p>
-
-                    <a href="#contact" class="button about__button-contact">Liên hệ với mình</a>
-                </div>
+               <img src="assets/img/img06.png" alt="" class="about__img">
+               <div class="about__data">
+                  <div class="about__info">
+                     <div class="about__box">
+                        <i class='bx bx-award about__icon'></i>
+                        <h3 class="about__title">Kinh nghiệm</h3>
+                        <span class="about__subtitle">3 năm làm việc</span>
+                     </div>
+                     <div class="about__box">
+                        <i class='bx bx-briefcase-alt about__icon'></i>
+                        <h3 class="about__title">Học vấn</h3>
+                        <span class="about__subtitle">Công nghệ thông tin</span>
+                     </div>
+                     <div class="about__box">
+                        <i class='bx bx-support about__icon'></i>
+                        <h3 class="about__title">Hỗ trợ</h3>
+                        <span class="about__subtitle">Trực tuyến 24/7</span>
+                     </div>
+                  </div>
+                  <p class="about__description">
+                     Mình là Graphic Designer và UI/UX Designer với kinh nghiệm trong việc thiết kế giao diện trực quan, thân thiện và tối ưu hóa trải nghiệm người dùng. Mình đam mê sáng tạo hình ảnh và xây dựng các giải pháp thiết kế hiệu quả để truyền tải thông điệp một cách rõ ràng và hấp dẫn. Trong vai trò Graphic Designer, mình đã thực hiện nhiều ấn phẩm truyền thông như poster, banner, social media visual, branding identity, giúp tăng nhận diện thương hiệu và thu hút khách hàng mục tiêu.
+                     Mình yêu thích việc giải quyết vấn đề bằng thiết kế, luôn đặt người dùng làm trung tâm trong mọi sản phẩm và chú trọng đến tính nhất quán giữa giao diện và thương hiệu. Mục tiêu của mình là tạo ra những sản phẩm vừa đẹp mắt vừa mang lại giá trị thực tiễn.
+                  </p>
+                  <a href="#contact" class="button about__button-contact">Liên hệ với mình</a>
+               </div>
             </div>
-        </section>
-
-        <!--=============== SKILLS ===============-->
-        <section class="skills section" id="skills">
+         </section>
+         <!--=============== SKILLS ===============-->
+         <section class="skills section" id="skills">
             <span class="section__subtitle">Kỹ năng</span>
             <h2 class="section__title">Mình có</h2>
-
             <div class="skills__container container grid">
-                <div class="skills__content">
-                    <h3 class="skills__title">Web <br/> Designer</h3>
-
-                    <div class="skills__box">
-                        <div class="skills__group">
-                            <div class="skills__data">
-                                <i class='bx bxs-badge-check'></i>
-
-                                <div>
-                                    <h3 class="skills__name">HTML</h3>
-                                    <span class="skills__level">Advanced</span>
-                                </div>
-                            </div>
-
-                            <div class="skills__data">
-                                <i class='bx bxs-badge-check'></i>
-
-                                <div>
-                                    <h3 class="skills__name">CSS/SCSS</h3>
-                                    <span class="skills__level">Advanced</span>
-                                </div>
-                            </div>
-
-                            <!-- <div class="skills__data">
-                                <i class='bx bxs-badge-check'></i>
-
-                                <div>
-                                    <h3 class="skills__name">Javascript</h3>
-                                    <span class="skills__level">Advanced</span>
-                                </div>
-                            </div> -->
-
+            <div class="skills__content">
+               <h3 class="skills__title">Web <br/> Designer</h3>
+               <div class="skills__box">
+                  <div class="skills__group">
+                     <div class="skills__data">
+                        <i class='bx bxs-badge-check'></i>
+                        <div>
+                           <h3 class="skills__name">HTML</h3>
+                           <span class="skills__level">Advanced</span>
                         </div>
-                        <div class="skills__group">
-                            <div class="skills__data">
-                                <i class='bx bxs-badge-check'></i>
-
-                                <div>
-                                    <h3 class="skills__name">Bootstrap</h3>
-                                    <span class="skills__level">Advanced</span>
-                                </div>
-                            </div>
-
-                            <!-- <div class="skills__data">
-                                <i class='bx bxs-badge-check'></i>
-
-                                <div>
-                                    <h3 class="skills__name">Git</h3>
-                                    <span class="skills__level">Advanced</span>
-                                </div>
-                            </div> -->
-
-                            <!-- <div class="skills__data">
-                                <i class='bx bxs-badge-check'></i>
-
-                                <div>
-                                    <h3 class="skills__name">React</h3>
-                                    <span class="skills__level">Intermediate</span>
-                                </div>
-                            </div> -->
-
+                     </div>
+                     <div class="skills__data">
+                        <i class='bx bxs-badge-check'></i>
+                        <div>
+                           <h3 class="skills__name">CSS/SCSS</h3>
+                           <span class="skills__level">Advanced</span>
                         </div>
-                    </div>
-                </div>
-
-                <div class="skills__content">
-                    <h3 class="skills__title">UI/UX/Graphic <br/> Designer</h3>
-
-                    <div class="skills__box">
-                        <div class="skills__group">
-                            <div class="skills__data">
-                                <i class='bx bxs-badge-check'></i>
-
-                                <div>
-                                    <h3 class="skills__name">Figma</h3>
-                                    <span class="skills__level">Advanced</span>
-                                </div>
-                            </div>
-
-                            <div class="skills__data">
-                                <i class='bx bxs-badge-check'></i>
-
-                                <div>
-                                    <h3 class="skills__name">Photoshop</h3>
-                                    <span class="skills__level">Advanced</span>
-                                </div>
-                            </div>
-
-                            <div class="skills__data">
-                                <i class='bx bxs-badge-check'></i>
-
-                                <div>
-                                    <h3 class="skills__name">Illustrator</h3>
-                                    <span class="skills__level">Intermediate</span>
-                                </div>
-                            </div>
-
+                     </div>
+                     <!-- <div class="skills__data">
+                        <i class='bx bxs-badge-check'></i>
+                        
+                        <div>
+                            <h3 class="skills__name">Javascript</h3>
+                            <span class="skills__level">Advanced</span>
                         </div>
-                        <div class="skills__group">
-                            <div class="skills__data">
-                                <i class='bx bxs-badge-check'></i>
-
-                                <div>
-                                    <h3 class="skills__name">Canva</h3>
-                                    <span class="skills__level">Advanced</span>
-                                </div>
-                            </div>
-
-                            <div class="skills__data">
-                                <i class='bx bxs-badge-check'></i>
-
-                                <div>
-                                    <h3 class="skills__name">Adobe XD</h3>
-                                    <span class="skills__level">Intermediate</span>
-                                </div>
-                            </div>
-
-                            <div class="skills__data">
-                                <i class='bx bxs-badge-check'></i>
-
-                                <div>
-                                    <h3 class="skills__name">Sketch</h3>
-                                    <span class="skills__level">Intermediate</span>
-                                </div>
-                            </div>
-
+                        </div> -->
+                  </div>
+                  <div class="skills__group">
+                     <div class="skills__data">
+                        <i class='bx bxs-badge-check'></i>
+                        <div>
+                           <h3 class="skills__name">Bootstrap</h3>
+                           <span class="skills__level">Advanced</span>
                         </div>
-                    </div>
-                </div>
-        </section>
-
-        <!--=============== SERVICES ===============-->
-        <section class="services section">
+                     </div>
+                     <!-- <div class="skills__data">
+                        <i class='bx bxs-badge-check'></i>
+                        
+                        <div>
+                            <h3 class="skills__name">Git</h3>
+                            <span class="skills__level">Advanced</span>
+                        </div>
+                        </div> -->
+                     <!-- <div class="skills__data">
+                        <i class='bx bxs-badge-check'></i>
+                        
+                        <div>
+                            <h3 class="skills__name">React</h3>
+                            <span class="skills__level">Intermediate</span>
+                        </div>
+                        </div> -->
+                  </div>
+               </div>
+            </div>
+            <div class="skills__content">
+               <h3 class="skills__title">UI/UX/Graphic <br/> Designer</h3>
+               <div class="skills__box">
+                  <div class="skills__group">
+                     <div class="skills__data">
+                        <i class='bx bxs-badge-check'></i>
+                        <div>
+                           <h3 class="skills__name">Figma</h3>
+                           <span class="skills__level">Advanced</span>
+                        </div>
+                     </div>
+                     <div class="skills__data">
+                        <i class='bx bxs-badge-check'></i>
+                        <div>
+                           <h3 class="skills__name">Photoshop</h3>
+                           <span class="skills__level">Advanced</span>
+                        </div>
+                     </div>
+                     <div class="skills__data">
+                        <i class='bx bxs-badge-check'></i>
+                        <div>
+                           <h3 class="skills__name">Illustrator</h3>
+                           <span class="skills__level">Intermediate</span>
+                        </div>
+                     </div>
+                  </div>
+                  <div class="skills__group">
+                     <div class="skills__data">
+                        <i class='bx bxs-badge-check'></i>
+                        <div>
+                           <h3 class="skills__name">Canva</h3>
+                           <span class="skills__level">Advanced</span>
+                        </div>
+                     </div>
+                     <div class="skills__data">
+                        <i class='bx bxs-badge-check'></i>
+                        <div>
+                           <h3 class="skills__name">Adobe XD</h3>
+                           <span class="skills__level">Intermediate</span>
+                        </div>
+                     </div>
+                     <div class="skills__data">
+                        <i class='bx bxs-badge-check'></i>
+                        <div>
+                           <h3 class="skills__name">Sketch</h3>
+                           <span class="skills__level">Intermediate</span>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </section>
+         <!--=============== SERVICES ===============-->
+         <section class="services section">
             <span class="section__subtitle">Dịch vụ</span>
             <h2 class="section__title">Mình cung cấp</h2>
-
             <div class="services__container container grid">
-                <div class="services__card">
-                    <div class="serv">
-                        <h3 class="services__title"> Web <br> Designer</h3>
-
-                        <span class="services__button">
-                            Xem Thêm <i class='bx bx-right-arrow services__icon'></i>
-                        </span>
-                    </div>
-
-
-                    <div class="services__modal">
-                        <div class="services__modal-content">
-                            <i class='bx bx-x services__modal-close'></i>
-
-                            <h3 class="services__modal-title">Web Designer</h3>
-
-                            <p class="services__modal-description">
-                                Web Design là quá trình tạo ra giao diện trực quan và trải nghiệm người dùng trên website hoặc ứng dụng. Công việc này tập trung vào bố cục, màu sắc, typography, hình ảnh, và sự tương tác nhằm đảm bảo thiết kế hấp dẫn, dễ sử dụng và phù hợp với mục tiêu thương hiệu.
-                            </p>
-
-                            <ul class="services__modal-list">
-                                <li class="services__modal-item">
-                                    <i class='bx bx-check-circle'></i>
-                                    <p class="services__modal-info">
-                                        Photoshop, Illustrator, XD, Figma
-                                    </p>
-                                </li>
-
-                                <li class="services__modal-item">
-                                    <i class='bx bx-check-circle'></i>
-                                    <p class="services__modal-info">
-                                       Nguyên tắc thiết kế giao diện và trải nghiệm người dùng
-                                    </p>
-                                </li>
-
-                                <li class="services__modal-item">
-                                    <i class='bx bx-check-circle'></i>
-                                    <p class="services__modal-info">
-                                        Phác thảo khung giao diện & Tạo nguyên mẫu thử nghiệm
-                                    </p>
-                                </li>
-
-                                <li class="services__modal-item">
-                                    <i class='bx bx-check-circle'></i>
-                                    <p class="services__modal-info">
-                                        Kiến thức cơ bản về HTML/CSS để bàn giao thiết kế cho lập trình viên
-                                    </p>
-                                </li>
-
-                                <li class="services__modal-item">
-                                    <i class='bx bx-check-circle'></i>
-                                    <p class="services__modal-info">
-                                        Đảm bảo tính nhất quán giữa các trình duyệt và thiết bị khác nhau
-                                    </p>
-                                </li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="services__card">
-                    <h3 class="services__title">UI/UX <br> Designer</h3>
-
-                    <span class="services__button">
-                        Xem Thêm <i class='bx bx-right-arrow services__icon'></i>
-                    </span>
-
-                    <div class="services__modal">
-                        <div class="services__modal-content">
-                            <i class='bx bx-x services__modal-close'></i>
-
-                            <h3 class="services__modal-title">UI/UX Designer</h3>
-
-                            <p class="services__modal-description">
-                               UI/UX Design tập trung vào việc tạo ra các giao diện kỹ thuật số trực quan, dễ sử dụng và hấp dẫn. Mục tiêu là nâng cao sự hài lòng của người dùng bằng cách cải thiện khả năng sử dụng, khả năng tiếp cận và hiệu quả trong tương tác.
-                            </p>
-
-                            <ul class="services__modal-list">
-                                <li class="services__modal-item">
-                                    <i class='bx bx-check-circle'></i>
-                                    <p class="services__modal-info">
-                                        Figma, Adobe XD, Sketch
-                                    </p>
-                                </li>
-
-                                <li class="services__modal-item">
-                                    <i class='bx bx-check-circle'></i>
-                                    <p class="services__modal-info">
-                                      Nghiên cứu người dùng và kiểm thử tính khả dụng
-                                    </p>
-                                </li>
-
-                                <li class="services__modal-item">
-                                    <i class='bx bx-check-circle'></i>
-                                    <p class="services__modal-info">
-                                        Phác thảo khung giao diện (wireframe) và tạo nguyên mẫu (prototype)
-                                    </p>
-                                </li>
-
-                                <li class="services__modal-item">
-                                    <i class='bx bx-check-circle'></i>
-                                    <p class="services__modal-info">
-                                        Thiết kế trực quan và xây dựng hệ thống thiết kế
-                                    </p>
-                                </li>
-
-                                <li class="services__modal-item">
-                                    <i class='bx bx-check-circle'></i>
-                                    <p class="services__modal-info">
-                                        Thiết kế đáp ứng và hỗ trợ khả năng tiếp cận cho mọi đối tượng người dùng
-                                    </p>
-                                </li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
-
-                
+               <div class="services__card">
+                  <div class="serv">
+                     <h3 class="services__title"> Web <br> Designer</h3>
+                     <span class="services__button">
+                     Xem Thêm <i class='bx bx-right-arrow services__icon'></i>
+                     </span>
+                  </div>
+                  <div class="services__modal">
+                     <div class="services__modal-content">
+                        <i class='bx bx-x services__modal-close'></i>
+                        <h3 class="services__modal-title">Web Designer</h3>
+                        <p class="services__modal-description">
+                           Web Design là quá trình tạo ra giao diện trực quan và trải nghiệm người dùng trên website hoặc ứng dụng. Công việc này tập trung vào bố cục, màu sắc, typography, hình ảnh, và sự tương tác nhằm đảm bảo thiết kế hấp dẫn, dễ sử dụng và phù hợp với mục tiêu thương hiệu.
+                        </p>
+                        <ul class="services__modal-list">
+                           <li class="services__modal-item">
+                              <i class='bx bx-check-circle'></i>
+                              <p class="services__modal-info">
+                                 Photoshop, Illustrator, XD, Figma
+                              </p>
+                           </li>
+                           <li class="services__modal-item">
+                              <i class='bx bx-check-circle'></i>
+                              <p class="services__modal-info">
+                                 Nguyên tắc thiết kế giao diện và trải nghiệm người dùng
+                              </p>
+                           </li>
+                           <li class="services__modal-item">
+                              <i class='bx bx-check-circle'></i>
+                              <p class="services__modal-info">
+                                 Phác thảo khung giao diện & Tạo nguyên mẫu thử nghiệm
+                              </p>
+                           </li>
+                           <li class="services__modal-item">
+                              <i class='bx bx-check-circle'></i>
+                              <p class="services__modal-info">
+                                 Kiến thức cơ bản về HTML/CSS để bàn giao thiết kế cho lập trình viên
+                              </p>
+                           </li>
+                           <li class="services__modal-item">
+                              <i class='bx bx-check-circle'></i>
+                              <p class="services__modal-info">
+                                 Đảm bảo tính nhất quán giữa các trình duyệt và thiết bị khác nhau
+                              </p>
+                           </li>
+                        </ul>
+                     </div>
+                  </div>
+               </div>
+               <div class="services__card">
+                  <h3 class="services__title">UI/UX <br> Designer</h3>
+                  <span class="services__button">
+                  Xem Thêm <i class='bx bx-right-arrow services__icon'></i>
+                  </span>
+                  <div class="services__modal">
+                     <div class="services__modal-content">
+                        <i class='bx bx-x services__modal-close'></i>
+                        <h3 class="services__modal-title">UI/UX Designer</h3>
+                        <p class="services__modal-description">
+                           UI/UX Design tập trung vào việc tạo ra các giao diện kỹ thuật số trực quan, dễ sử dụng và hấp dẫn. Mục tiêu là nâng cao sự hài lòng của người dùng bằng cách cải thiện khả năng sử dụng, khả năng tiếp cận và hiệu quả trong tương tác.
+                        </p>
+                        <ul class="services__modal-list">
+                           <li class="services__modal-item">
+                              <i class='bx bx-check-circle'></i>
+                              <p class="services__modal-info">
+                                 Figma, Adobe XD, Sketch
+                              </p>
+                           </li>
+                           <li class="services__modal-item">
+                              <i class='bx bx-check-circle'></i>
+                              <p class="services__modal-info">
+                                 Nghiên cứu người dùng và kiểm thử tính khả dụng
+                              </p>
+                           </li>
+                           <li class="services__modal-item">
+                              <i class='bx bx-check-circle'></i>
+                              <p class="services__modal-info">
+                                 Phác thảo khung giao diện (wireframe) và tạo nguyên mẫu (prototype)
+                              </p>
+                           </li>
+                           <li class="services__modal-item">
+                              <i class='bx bx-check-circle'></i>
+                              <p class="services__modal-info">
+                                 Thiết kế trực quan và xây dựng hệ thống thiết kế
+                              </p>
+                           </li>
+                           <li class="services__modal-item">
+                              <i class='bx bx-check-circle'></i>
+                              <p class="services__modal-info">
+                                 Thiết kế đáp ứng và hỗ trợ khả năng tiếp cận cho mọi đối tượng người dùng
+                              </p>
+                           </li>
+                        </ul>
+                     </div>
+                  </div>
+               </div>
             </div>
-        </section>
-
-        <!--=============== WORK ===============-->
-        <section class="work section" id="work">
+         </section>
+         <!--=============== WORK ===============-->
+         <section class="work section" id="work">
             <span class="section__subtitle">Danh mục thiết kế</span>
             <h2 class="section__title">Dự án đã làm</h2>
-
             <div class="work__filters">
-                <span class="work__item active-work" data-filter='all'>Tất cả</span>
-                <span class=" work__item" data-filter='.web'>Website</span>
-                <span class=" work__item" data-filter='.movil'>Mobile app</span>
-                 <span class=" work__item" data-filter='.design'>Design</span>
-              
+               <span class="work__item active-work" data-filter='all'>Tất cả</span>
+               <span class=" work__item" data-filter='.web'>Website</span>
+               <span class=" work__item" data-filter='.movil'>Mobile app</span>
             </div>
-
             <div class="work__container container grid">
-                <div class="work__card mix web">
-                    <img src="assets/img/work1.png" alt="" class="work__img">
-
-                    <h3 class="work__title">Tinh dầu LEO</h3>
-
-                    <a href="https://byvn.net/Qhjv" target="_blank" class="work__button">
-                        Xem thêm <i class='bx bx-right-arrow work__icon'></i>
-                    </a>
-                </div>
-
-                <div class="work__card mix movil">
-                    <img src="assets/img/work2.png" alt="" class="work__img">
-
-                    <h3 class="work__title">Xổ số Bình Dương</h3>
-
-                    <a href="https://byvn.net/QPYA" target="_blank" class="work__button">
-                        Xem thêm <i class='bx bx-right-arrow work__icon'></i>
-                    </a>
-                </div>
-
-                
-
-                <div class="work__card mix web">
-                    <img src="assets/img/work4.png" alt="" class="work__img">
-
-                    <h3 class="work__title">EVN Solar</h3>
-
-                    <a href="https://byvn.net/xd9P" target="_blank" class="work__button">
-                        Xem thêm <i class='bx bx-right-arrow work__icon'></i>
-                    </a>
-                </div>
-
-                 <div class="work__card mix web">
-                    <img src="assets/img/work6.png" alt="" class="work__img">
-
-                    <h3 class="work__title">VietCAS EMR</h3>
-
-                    <a href="https://byvn.net/bh96" target="_blank" class="work__button">
-                        Xem thêm <i class='bx bx-right-arrow work__icon'></i>
-                    </a>
-                </div>
-
-                <div class="work__card mix movil">
-                    <img src="assets/img/work5.png" alt="" class="work__img">
-
-                    <h3 class="work__title">HiSport</h3>
-
-                    <a href="https://byvn.net/R8Gj" target="_blank" class="work__button">
-                        Xem thêm <i class='bx bx-right-arrow work__icon'></i>
-                    </a>
-                </div>
-
-
-                 <!-- <div class="work__card mix design">
-                    <img src="assets/img/work3.jpg" alt="" class="work__img">
-
-                    <h3 class="work__title">Poster</h3>
-
-                    <a href="#" class="work__button">
-                        Demo <i class='bx bx-right-arrow work__icon'></i>
-                    </a>
-                </div> -->
-
-             
-<!-- ---------- -->
-<div class="work__card mix design">
-    <img src="assets/img/poster.png" alt="" class="work__img">
-    <h3 class="work__title">Poster</h3>
-    <a href="assets/img/1.png" class="work__button glightbox" data-gallery="gallery1">
-        Xem thêm <i class='bx bx-right-arrow work__icon'></i>
-    </a>
-</div>
-
-<!-- Các ảnh khác trong cùng gallery -->
-<div style="display: none;"> <!-- Có thể dùng `display: none` hoặc class tùy bạn -->
-    <a href="assets/img/2.png" class="glightbox" data-gallery="gallery1"></a>
-    <a href="assets/img/3.jpg" class="glightbox" data-gallery="gallery1"></a>
-</div>
-<!-- -------- -->
-
+               <div class="work__card mix web">
+                  <img src="assets/img/work1.png" alt="" class="work__img">
+                  <h3 class="work__title">Tinh dầu LEO</h3>
+                  <a href="https://byvn.net/Qhjv" target="_blank" class="work__button">
+                  Xem thêm <i class='bx bx-right-arrow work__icon'></i>
+                  </a>
+               </div>
+               <div class="work__card mix movil">
+                  <img src="assets/img/work2.png" alt="" class="work__img">
+                  <h3 class="work__title">Xổ số Bình Dương</h3>
+                  <a href="https://byvn.net/QPYA" target="_blank" class="work__button">
+                  Xem thêm <i class='bx bx-right-arrow work__icon'></i>
+                  </a>
+               </div>
+               <div class="work__card mix web">
+                  <img src="assets/img/work4.png" alt="" class="work__img">
+                  <h3 class="work__title">EVN Solar</h3>
+                  <a href="https://byvn.net/xd9P" target="_blank" class="work__button">
+                  Xem thêm <i class='bx bx-right-arrow work__icon'></i>
+                  </a>
+               </div>
+               <div class="work__card mix web">
+                  <img src="assets/img/work6.png" alt="" class="work__img">
+                  <h3 class="work__title">VietCAS EMR</h3>
+                  <a href="https://byvn.net/bh96" target="_blank" class="work__button">
+                  Xem thêm <i class='bx bx-right-arrow work__icon'></i>
+                  </a>
+               </div>
+               <div class="work__card mix movil">
+                  <img src="assets/img/work5.png" alt="" class="work__img">
+                  <h3 class="work__title">HiSport</h3>
+                  <a href="https://byvn.net/R8Gj" target="_blank" class="work__button">
+                  Xem thêm <i class='bx bx-right-arrow work__icon'></i>
+                  </a>
+               </div>
+               <!-- <div class="work__card mix design">
+                  <img src="assets/img/work3.jpg" alt="" class="work__img">
+                  
+                  <h3 class="work__title">Poster</h3>
+                  
+                  <a href="#" class="work__button">
+                      Demo <i class='bx bx-right-arrow work__icon'></i>
+                  </a>
+                  </div> -->
+               <!-- ---------- -->
+               <!-- Các ảnh khác trong cùng gallery -->
+               <div style="display: none;">
+                  <!-- Có thể dùng `display: none` hoặc class tùy bạn -->
+                  <a href="assets/img/2.png" class="glightbox" data-gallery="gallery1"></a>
+                  <a href="assets/img/3.jpg" class="glightbox" data-gallery="gallery1"></a>
+               </div>
+               <!-- -------- -->
             </div>
-        </section>
+         </section>
+         <!--=============== TESTIMONIALS ===============-->
+         <section class="testimonial section">
+              <div id="modal" class="modal">
+            <span class="close" onclick="closeModal()">&times;</span>
+            <div class="modal-content">
+               <img id="modal-img" class="modal-img" src="" alt="">
+            </div>
 
-        <!--=============== TESTIMONIALS ===============-->
-        <section class="testimonial section">
+              <span class="prev" onclick="changeImage(-1)">&#10094;</span>
+            <span class="next" onclick="changeImage(1)">&#10095;</span>
+         </div>
             <span class="section__subtitle">Ảnh banner</span>
             <h2 class="section__title">Quảng cáo</h2>
-
             <div class="testimonial__container container swiper">
-                <div class="swiper-wrapper">
-                    <div class="testimonial__card swiper-slide">
-                        <img src="assets/img/testimonial1.jpg" alt="" class="testimonial__img">
-
-                        <h3 class="testimonial__name">Vui giáng sinh cùng POOC Billiards Club</h3>
-                        <p class="testimonial__description">
-                           Hình ảnh với tông hồng chủ đạo mang đến cảm giác ấm áp và dễ chịu trong không khí Giáng Sinh rộn ràng. Các chi tiết trang trí như người tuyết, cây thông và tất Noel tạo nên một không gian vui tươi, thân thiện. 
-                        </p>
-                    </div>
-
-                    <div class="testimonial__card swiper-slide">
-                        <img src="assets/img/testimonial2.jpg" alt="" class="testimonial__img">
-
-                        <h3 class="testimonial__name">Back to school POOC tung ưu đãi</h3>
-                        <p class="testimonial__description">
-                            Hình ảnh sử dụng tông màu xanh đen mạnh mẽ, tạo cảm giác năng động và hiện đại, phù hợp với tinh thần "Back to School". Các yếu tố chữ được làm nổi bật bằng màu vàng neon và trắng, dễ đọc và thu hút ánh nhìn. 
-                        </p>
-                    </div>
-
-                    <div class="testimonial__card swiper-slide">
-                        <img src="assets/img/testimonial3.jpg" alt="" class="testimonial__img">
-
-                        <h3 class="testimonial__name">Quẩy tưng bừng – đến POOC mừng giáng sinh</h3>
-                        <p class="testimonial__description">
-                            Thiết kế sử dụng tông hồng pastel nhẹ nhàng kết hợp các chi tiết đồ họa như ông già Noel, cây thông và hộp quà tạo không khí lễ hội vui tươi. Bố cục sinh động với hình ảnh người chơi đặt trong khung màu sắc nổi bật.
-                        </p>
-                    </div>
-
-                     <div class="testimonial__card swiper-slide">
-                        <img src="assets/img/img04.jpg" alt="" class="testimonial__img">
-
-                        <h3 class="testimonial__name">Ẩm thực đặc sắc – VietsoPetro Resort</h3>
-                        <p class="testimonial__description">
-                           Thiết kế mang phong cách truyền thống với nền giả vân gỗ tạo cảm giác gần gũi, mộc mạc. Hình ảnh món ăn được minh họa bằng phong cách tranh vẽ tay giúp tôn vinh nét đẹp văn hóa ẩm thực Việt. 
-                        </p>
-                    </div>
-                </div>
-                <div class="swiper-pagination"></div>
+               <div class="swiper-wrapper">
+                  <div class="testimonial__card swiper-slide">
+                     <div class="gallery-item" style="width: 100% !important; height: auto !important;" onclick="openModal('assets/img/testimonial1.jpg', 'Ảnh phong cảnh đẹp')">
+                        <img class="testimonial__img" src="assets/img/testimonial1.jpg" alt="Cover ảnh 1">
+                     </div>
+                     <h3 class="testimonial__name">Vui giáng sinh cùng POOC Billiards Club</h3>
+                     <p class="testimonial__description">
+                        Hình ảnh với tông hồng chủ đạo mang đến cảm giác ấm áp và dễ chịu trong không khí Giáng Sinh rộn ràng. Các chi tiết trang trí như người tuyết, cây thông và tất Noel tạo nên một không gian vui tươi, thân thiện. 
+                     </p>
+                  </div>
+                  <div class="testimonial__card swiper-slide">
+                     <div class="gallery-item" style="width: 100% !important; height: auto !important;" onclick="openModal('assets/img/testimonial2.jpg', 'Ảnh phong cảnh đẹp')">
+                        <img class="testimonial__img" src="assets/img/testimonial2.jpg" alt="Cover ảnh 1">
+                     </div>
+                     <h3 class="testimonial__name">Vui giáng sinh cùng POOC Billiards Club</h3>
+                     <p class="testimonial__description">
+                        Hình ảnh sử dụng tông màu xanh đen mạnh mẽ, tạo cảm giác năng động và hiện đại, phù hợp với tinh thần "Back to School". Các yếu tố chữ được làm nổi bật bằng màu vàng neon và trắng, dễ đọc và thu hút ánh nhìn. 
+                     </p>
+                  </div>
+                  <div class="testimonial__card swiper-slide">
+                     <div class="gallery-item" style="width: 100% !important; height: auto !important;" onclick="openModal('assets/img/testimonial3.jpg', 'Ảnh phong cảnh đẹp')">
+                        <img class="testimonial__img" src="assets/img/testimonial3.jpg" alt="Cover ảnh 1">
+                     </div>
+                     <h3 class="testimonial__name">Vui giáng sinh cùng POOC Billiards Club</h3>
+                     <p class="testimonial__description">
+                        Thiết kế sử dụng tông hồng pastel nhẹ nhàng kết hợp các chi tiết đồ họa như ông già Noel, cây thông và hộp quà tạo không khí lễ hội vui tươi. Bố cục sinh động với hình ảnh người chơi đặt trong khung màu sắc nổi bật.
+                     </p>
+                  </div>
+                  <div class="testimonial__card swiper-slide">
+                     <div class="gallery-item" style="width: 100% !important; height: auto !important;" onclick="openModal('assets/img/img04.jpg', 'Ảnh phong cảnh đẹp')">
+                        <img class="testimonial__img" src="assets/img/img04.jpg" alt="Cover ảnh 1">
+                     </div>
+                     <h3 class="testimonial__name">Vui giáng sinh cùng POOC Billiards Club</h3>
+                     <p class="testimonial__description">
+                        Thiết kế mang phong cách truyền thống với nền giả vân gỗ tạo cảm giác gần gũi, mộc mạc. Hình ảnh món ăn được minh họa bằng phong cách tranh vẽ tay giúp tôn vinh nét đẹp văn hóa ẩm thực Việt. 
+                     </p>
+                  </div>
+               </div>
+               <div class="swiper-pagination"></div>
             </div>
-
-        </section>
-
-        <!--=============== CONTACT ===============-->
-        <section class="contact section" id="contact">
+         </section>
+         <!--=============== Hình ảnh show zoom ===============-->
+         <section class="testimonial section">
+            <span class="section__subtitle">Ảnh thiết kế</span>
+            <h2 class="section__title">Tổng hợp</h2>
+            <div class="container grid">
+               <div class="work__card mix design">
+                  <div class="gallery-show">
+                     <!-- Ảnh 1 -->
+                     <div class="gallery-item-show" onclick="openModal('./assets//img/001.png', 'Ảnh phong cảnh đẹp')">
+                        <img class="gallery-cover" src="./assets//img/001.png" alt="Cover ảnh 1">
+                     </div>
+                     <!-- Ảnh 2 -->
+                     <div class="gallery-item-show" onclick="openModal('./assets//img/002.png', 'Ảnh hình vuông')">
+                        <img class="gallery-cover" src="./assets//img/002.png" alt="Cover ảnh 2">
+                     </div>
+                     <!-- Ảnh 3 -->
+                     <div class="gallery-item-show" onclick="openModal('./assets//img/003.png', 'Ảnh dọc')">
+                        <img class="gallery-cover" src="./assets//img/003.png" alt="Cover ảnh 3">
+                     </div>
+                     <div class="gallery-item-show" onclick="openModal('./assets//img/004.png', 'Ảnh dọc')">
+                        <img class="gallery-cover" src="./assets//img/004.png" alt="Cover ảnh 3">
+                     </div>
+                     <div class="gallery-item-show" onclick="openModal('./assets//img/005.png', 'Ảnh dọc')">
+                        <img class="gallery-cover" src="./assets//img/005.png" alt="Cover ảnh 3">
+                     </div>
+                     <div class="gallery-item-show" onclick="openModal('./assets//img/006.png', 'Ảnh dọc')">
+                        <img class="gallery-cover" src="./assets//img/006.png" alt="Cover ảnh 3">
+                     </div>
+                     <div class="gallery-item-show" onclick="openModal('./assets//img/007.jpg', 'Ảnh dọc')">
+                        <img class="gallery-cover" src="./assets//img/007.jpg" alt="Cover ảnh 3">
+                     </div>
+                     <div class="gallery-item-show" onclick="openModal('./assets//img/008.png', 'Ảnh dọc')">
+                        <img class="gallery-cover" src="./assets//img/008.png" alt="Cover ảnh 3">
+                     </div>
+                     <div class="gallery-item-show" onclick="openModal('./assets//img/009.png', 'Ảnh dọc')">
+                        <img class="gallery-cover" src="./assets//img/009.png" alt="Cover ảnh 3">
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </section>
+         <!--=============== END Hình ảnh show zoom ===============-->
+         <!--=============== CONTACT ===============-->
+         <section class="contact section" id="contact">
             <sapn class="section__subtitle">Tương tác</sapn>
             <h3 class="section__title">Liên hệ</h3>
-
             <div class="contact__container container grid">
-                <div class="contact__content">
-                    <h3 class="contact__title contact__title-info">Nhắn đến mình</h3>
-
-                    <div class="contact__info">
-                        <div class="contact__card">
-                            <i class='bx bx-mail-send contact__card-icon'></i>
-                            <h3 class="contact__card-title">Email</h3>
-                            <span class="contact__card-data">dangtrantoan9x@gmail.com</span>
-
-                          
-                        </div>
-
-                        <div class="contact__card">
-                            <i class='bx bxl-whatsapp contact__card-icon'></i>
-                            <h3 class="contact__card-title">Whatsapp</h3>
-                            <span class="contact__card-data">0384 699 502</span>
-
-                          
-                        </div>
-
-                        <div class="contact__card">
-                            <i class='bx bxl-facebook contact__card-icon'></i>
-                            <h3 class="contact__card-title">Facebook</h3>
-                            <span class="contact__card-data">Đăng Toàn</span>
-
-                        </div>
-                    </div>
-                </div>
-
-                <div class="contact__content">
-                    <h3 class="contact__title contact__title-form">Viết cho mình lời nhắn của bạn</h3>
-
-                    <form 
-                      action="https://formspree.io/f/mldbyjel"
-  method="POST"
-                      class="contact__form">
-                     
-
-                        <div class="contact__form-div">
-                            <label for="" class="contact__form-tag">Thư điện tử</label>
-                            <input  type="email" name="email" placeholder="Nhập thư điện tử" class="contact__form-input">
-                            
-                        </div>
-
-                        <div class="contact__form-div contact__form-area">
-                            <label for="" class="contact__form-tag">Lời nhắn</label>
-                            <textarea name="message" id="" cols="30" rows="10" placeholder="Viết lời nhắn của bạn"
-                                class="contact__form-input "></textarea>
-
-                                
-                        </div>
-
-
-                        <button class="button" type="submit">
-                            Gửi tin nhắn
-                        </button>
-                    </form>
-
-                  
-
-
-                   
-
-                </div>
-
-        </section>
-    </main>
-
-    <!--=============== FOOTER ===============-->
-    <footer class="footer">
-        <div class="footer__container container">
+            <div class="contact__content">
+               <h3 class="contact__title contact__title-info">Nhắn đến mình</h3>
+               <div class="contact__info">
+                  <div class="contact__card">
+                     <i class='bx bx-mail-send contact__card-icon'></i>
+                     <h3 class="contact__card-title">Email</h3>
+                     <span class="contact__card-data">dangtrantoan9x@gmail.com</span>
+                  </div>
+                  <div class="contact__card">
+                     <i class='bx bxl-whatsapp contact__card-icon'></i>
+                     <h3 class="contact__card-title">Whatsapp</h3>
+                     <span class="contact__card-data">0384 699 502</span>
+                  </div>
+                  <div class="contact__card">
+                     <i class='bx bxl-facebook contact__card-icon'></i>
+                     <h3 class="contact__card-title">Facebook</h3>
+                     <span class="contact__card-data">Đăng Toàn</span>
+                  </div>
+               </div>
+            </div>
+            <div class="contact__content">
+               <h3 class="contact__title contact__title-form">Viết cho mình lời nhắn của bạn</h3>
+               <form 
+                  action="https://formspree.io/f/mldbyjel"
+                  method="POST"
+                  class="contact__form">
+                  <div class="contact__form-div">
+                     <label for="" class="contact__form-tag">Thư điện tử</label>
+                     <input  type="email" name="email" placeholder="Nhập thư điện tử" class="contact__form-input">
+                  </div>
+                  <div class="contact__form-div contact__form-area">
+                     <label for="" class="contact__form-tag">Lời nhắn</label>
+                     <textarea name="message" id="" cols="30" rows="10" placeholder="Viết lời nhắn của bạn"
+                        class="contact__form-input "></textarea>
+                  </div>
+                  <button class="button" type="submit">
+                  Gửi tin nhắn
+                  </button>
+               </form>
+            </div>
+         </section>
+      </main>
+      <!--=============== FOOTER ===============-->
+      <footer class="footer">
+         <div class="footer__container container">
             <h1 class="footer__title">Đăng Toàn</h1>
-
             <ul class="footer__list">
-
-                <li class="footer__item">
-                    <a href="#" class="footer__link">Trang chủ</a>
-                </li>
-                <li class="footer__item">
-                    <a href="#about" class="footer__link">Bản thân</a>
-                </li>
-                <li class="footer__item">
-                    <a href="#skills" class="footer__link">Kỹ năng</a>
-                </li>
-                <li class="footer__item">
-                    <a href="#work" class="footer__link">Dự án</a>
-                </li>
-                <li class="footer__item">
-                    <a href="#contact" class="footer__link">Liên hệ</a>
-                </li>
+               <li class="footer__item">
+                  <a href="#" class="footer__link">Trang chủ</a>
+               </li>
+               <li class="footer__item">
+                  <a href="#about" class="footer__link">Bản thân</a>
+               </li>
+               <li class="footer__item">
+                  <a href="#skills" class="footer__link">Kỹ năng</a>
+               </li>
+               <li class="footer__item">
+                  <a href="#work" class="footer__link">Dự án</a>
+               </li>
+               <li class="footer__item">
+                  <a href="#contact" class="footer__link">Liên hệ</a>
+               </li>
             </ul>
-
             <ul class="footer__social">
-                <li class="footer__social-item">
-                    <a href="#" target="_blank" class="footer__social-link">
-                        <i class='bx bxl-facebook footer__social-icon'></i>
-                    </a>
-                </li>
-                <li class="footer__social-item">
-                    <a href="#" target="_blank" class="footer__social-link">
-                        <i class='bx bxl-twitter footer__social-icon'></i>
-                    </a>
-                </li>
-                <li class="footer__social-item">
-                    <a href="#" target="_blank" class="footer__social-link">
-                        <i class='bx bxl-linkedin footer__social-icon'></i>
-                    </a>
-                </li>
-                <li class="footer__social-item">
-                    <a href="#" target="_blank" class="footer__social-link">
-                        <i class='bx bxl-instagram footer__social-icon'></i>
-                    </a>
-                </li>
+               <li class="footer__social-item">
+                  <a href="#" target="_blank" class="footer__social-link">
+                  <i class='bx bxl-facebook footer__social-icon'></i>
+                  </a>
+               </li>
+               <li class="footer__social-item">
+                  <a href="#" target="_blank" class="footer__social-link">
+                  <i class='bx bxl-twitter footer__social-icon'></i>
+                  </a>
+               </li>
+               <li class="footer__social-item">
+                  <a href="#" target="_blank" class="footer__social-link">
+                  <i class='bx bxl-linkedin footer__social-icon'></i>
+                  </a>
+               </li>
+               <li class="footer__social-item">
+                  <a href="#" target="_blank" class="footer__social-link">
+                  <i class='bx bxl-instagram footer__social-icon'></i>
+                  </a>
+               </li>
             </ul>
-
             <span class="footer__copy">
-                &#169; 2025 DangToan
+            &#169; 2025 DangToan
             </span>
-        </div>
-    </footer>
+         </div>
+      </footer>
+      <!--=============== SCROLLREVEAL ===============-->
+      <!-- <script src="assets/js/scrollreveal.min.js"></script> -->
+      <script src="https://unpkg.com/scrollreveal/dist/scrollreveal.min.js"></script>
+      <!--=============== SWIPER JS ===============-->
+      <script src="assets/js/swiper-bundle.min.js"></script>
+      <!--=============== MIXITUP FILTER ===============-->
+      <script src="assets/js/mixitup.min.js"></script>
+      <!--=============== MAIN JS ===============-->
+      <script src="assets/js/main.js"></script>
+      <!-- -------------------- -->
+      <script>
+    // Biến toàn cục lưu trữ danh sách ảnh và vị trí hiện tại
+    let currentImageIndex = 0;
+    const imageList = [];
 
-    <!--=============== SCROLLREVEAL ===============-->
+    // Hàm khởi tạo - thu thập tất cả ảnh khi trang tải xong
+    function initGallery() {
+        const galleryItems = document.querySelectorAll('.gallery-item-show');
+        
+        galleryItems.forEach((item, index) => {
+            const img = item.querySelector('.gallery-cover');
+            imageList.push({
+                src: img.src,
+                alt: img.alt
+            });
+            
+            // Cập nhật onclick để truyền cả index
+            item.onclick = function() {
+                openModal(img.src, img.alt, index);
+            };
+        });
+    }
 
-    <!-- <script src="assets/js/scrollreveal.min.js"></script> -->
-    <script src="https://unpkg.com/scrollreveal/dist/scrollreveal.min.js"></script>
+    // Hàm mở modal
+    function openModal(imgSrc, imgAlt, index) {
+        const modal = document.getElementById("modal");
+        const modalImg = document.getElementById("modal-img");
+        
+        currentImageIndex = index;
+        modal.style.display = "block";
+        modalImg.src = imgSrc;
+        modalImg.alt = imgAlt;
+        
+        // Thêm sự kiện bàn phím
+        document.addEventListener('keydown', handleKeyPress);
+    }
 
-    <!--=============== SWIPER JS ===============-->
-    <script src="assets/js/swiper-bundle.min.js"></script>
+    // Hàm đóng modal
+    function closeModal() {
+        document.getElementById("modal").style.display = "none";
+        document.removeEventListener('keydown', handleKeyPress);
+    }
 
-    <!--=============== MIXITUP FILTER ===============-->
-    <script src="assets/js/mixitup.min.js"></script>
+    // Hàm xử lý phím
+    function handleKeyPress(event) {
+        if (event.key === "Escape") {
+            closeModal();
+        } else if (event.key === "ArrowLeft") {
+            changeImage(-1);
+        } else if (event.key === "ArrowRight") {
+            changeImage(1);
+        }
+    }
 
-    <!--=============== MAIN JS ===============-->
-    <script src="assets/js/main.js"></script>
- <!-- -------------------- -->
+    // Hàm chuyển ảnh
+    function changeImage(direction) {
+        currentImageIndex += direction;
+        
+        // Xử lý vòng lặp nếu vượt quá giới hạn
+        if (currentImageIndex >= imageList.length) {
+            currentImageIndex = 0;
+        } else if (currentImageIndex < 0) {
+            currentImageIndex = imageList.length - 1;
+        }
+        
+        // Cập nhật ảnh hiển thị
+        const modalImg = document.getElementById("modal-img");
+        modalImg.src = imageList[currentImageIndex].src;
+        modalImg.alt = imageList[currentImageIndex].alt;
+    }
 
-</body>
+    // Sự kiện click ra ngoài modal để đóng
+    window.onclick = function(event) {
+        const modal = document.getElementById("modal");
+        if (event.target === modal) {
+            closeModal();
+        }
+    }
 
+    // Khởi tạo gallery khi trang tải xong
+    window.onload = initGallery;
+</script>
+
+
+
+
+   </body>
 </html>

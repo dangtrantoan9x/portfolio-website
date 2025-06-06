@@ -501,6 +501,8 @@
                <div class="swiper-pagination"></div>
             </div>
          </section> -->
+         <!-- Thêm phần modal vào HTML (thường đặt ở cuối body) -->
+
          <!--=============== Hình ảnh show zoom ===============-->
          <section class="testimonial section">
   <span class="section__subtitle">Ảnh thiết kế</span>
@@ -508,7 +510,8 @@
   <div class="container grid">
     <div class="work__card mix design">
       <div class="gallery-show">
-      
+
+        <!-- Nhóm ảnh 33 → 77 -->
         <div class="gallery-item-show" onclick="openModal('./assets//img/33.jpg', 'Ảnh dọc')">
           <img class="gallery-cover" src="./assets//img/33.jpg" alt="Cover ảnh 3">
         </div>
@@ -524,10 +527,11 @@
         <div class="gallery-item-show" onclick="openModal('./assets//img/77.jpg', 'Ảnh dọc')">
           <img class="gallery-cover" src="./assets//img/77.jpg" alt="Cover ảnh 3">
         </div>
+
+        <!-- Nhóm ảnh img014 → img017 -->
         <div class="gallery-item-show" onclick="openModal('./assets//img/img014.jpg', 'Ảnh dọc')">
           <img class="gallery-cover" src="./assets//img/img014.jpg" alt="Cover ảnh 3">
         </div>
-  
         <div class="gallery-item-show" onclick="openModal('./assets//img/img016.png', 'Ảnh dọc')">
           <img class="gallery-cover" src="./assets//img/img016.png" alt="Cover ảnh 3">
         </div>
@@ -535,73 +539,86 @@
           <img class="gallery-cover" src="./assets//img/img017.png" alt="Cover ảnh 3">
         </div>
 
-
+        <!-- Nhóm ảnh img020 → img031 -->
         <div class="gallery-item-show" onclick="openModal('./assets/img/img020.png', 'Ảnh dọc')">
-  <img class="gallery-cover" src="./assets/img/img020.png" alt="Cover ảnh 20">
-</div>
-<div class="gallery-item-show" onclick="openModal('./assets/img/img021.png', 'Ảnh dọc')">
-  <img class="gallery-cover" src="./assets/img/img021.png" alt="Cover ảnh 21">
-</div>
-<div class="gallery-item-show" onclick="openModal('./assets/img/img022.png', 'Ảnh dọc')">
-  <img class="gallery-cover" src="./assets/img/img022.png" alt="Cover ảnh 22">
-</div>
-<div class="gallery-item-show" onclick="openModal('./assets/img/img023.png', 'Ảnh dọc')">
-  <img class="gallery-cover" src="./assets/img/img023.png" alt="Cover ảnh 23">
-</div>
-<div class="gallery-item-show" onclick="openModal('./assets/img/img024.png', 'Ảnh dọc')">
-  <img class="gallery-cover" src="./assets/img/img024.png" alt="Cover ảnh 24">
-</div>
-<div class="gallery-item-show" onclick="openModal('./assets/img/img025.png', 'Ảnh dọc')">
-  <img class="gallery-cover" src="./assets/img/img025.png" alt="Cover ảnh 25">
-</div>
-<div class="gallery-item-show" onclick="openModal('./assets/img/img026.png', 'Ảnh dọc')">
-  <img class="gallery-cover" src="./assets/img/img026.png" alt="Cover ảnh 26">
-</div>
-<div class="gallery-item-show" onclick="openModal('./assets/img/img027.png', 'Ảnh dọc')">
-  <img class="gallery-cover" src="./assets/img/img027.png" alt="Cover ảnh 27">
-</div>
-<div class="gallery-item-show" onclick="openModal('./assets/img/img028.png', 'Ảnh dọc')">
-  <img class="gallery-cover" src="./assets/img/img028.png" alt="Cover ảnh 28">
-</div>
-<div class="gallery-item-show" onclick="openModal('./assets/img/img029.png', 'Ảnh dọc')">
-  <img class="gallery-cover" src="./assets/img/img029.png" alt="Cover ảnh 29">
-</div>
-<div class="gallery-item-show" onclick="openModal('./assets/img/img030.png', 'Ảnh dọc')">
-  <img class="gallery-cover" src="./assets/img/img030.png" alt="Cover ảnh 30">
-</div>
-<div class="gallery-item-show" onclick="openModal('./assets/img/img031.png', 'Ảnh dọc')">
-  <img class="gallery-cover" src="./assets/img/img031.png" alt="Cover ảnh 31">
-</div>
-        <!-- Ảnh 1 -->
+          <img class="gallery-cover" src="./assets/img/img020.png" alt="Cover ảnh 20">
+        </div>
+        <div class="gallery-item-show" onclick="openModal('./assets/img/img021.png', 'Ảnh dọc')">
+          <img class="gallery-cover" src="./assets/img/img021.png" alt="Cover ảnh 21">
+        </div>
+        <div class="gallery-item-show" onclick="openModal('./assets/img/img022.png', 'Ảnh dọc')">
+          <img class="gallery-cover" src="./assets/img/img022.png" alt="Cover ảnh 22">
+        </div>
+        <div class="gallery-item-show" onclick="openModal('./assets/img/img023.png', 'Ảnh dọc')">
+          <img class="gallery-cover" src="./assets/img/img023.png" alt="Cover ảnh 23">
+        </div>
+        <div class="gallery-item-show" onclick="openModal('./assets/img/img024.png', 'Ảnh dọc')">
+          <img class="gallery-cover" src="./assets/img/img024.png" alt="Cover ảnh 24">
+        </div>
+        <div class="gallery-item-show" onclick="openModal('./assets/img/img025.png', 'Ảnh dọc')">
+          <img class="gallery-cover" src="./assets/img/img025.png" alt="Cover ảnh 25">
+        </div>
+        <div class="gallery-item-show" onclick="openModal('./assets/img/img026.png', 'Ảnh dọc')">
+          <img class="gallery-cover" src="./assets/img/img026.png" alt="Cover ảnh 26">
+        </div>
+        <div class="gallery-item-show" onclick="openModal('./assets/img/img027.png', 'Ảnh dọc')">
+          <img class="gallery-cover" src="./assets/img/img027.png" alt="Cover ảnh 27">
+        </div>
+        <div class="gallery-item-show" onclick="openModal('./assets/img/img028.png', 'Ảnh dọc')">
+          <img class="gallery-cover" src="./assets/img/img028.png" alt="Cover ảnh 28">
+        </div>
+        <div class="gallery-item-show" onclick="openModal('./assets/img/img029.png', 'Ảnh dọc')">
+          <img class="gallery-cover" src="./assets/img/img029.png" alt="Cover ảnh 29">
+        </div>
+        <div class="gallery-item-show" onclick="openModal('./assets/img/img030.png', 'Ảnh dọc')">
+          <img class="gallery-cover" src="./assets/img/img030.png" alt="Cover ảnh 30">
+        </div>
+        <div class="gallery-item-show" onclick="openModal('./assets/img/img031.png', 'Ảnh dọc')">
+          <img class="gallery-cover" src="./assets/img/img031.png" alt="Cover ảnh 31">
+        </div>
+
+        <!-- Ảnh 001 → 006 -->
         <div class="gallery-item-show" onclick="openModal('./assets//img/001.png', 'Ảnh phong cảnh đẹp')">
           <img class="gallery-cover" src="./assets//img/001.png" alt="Cover ảnh 1">
         </div>
-        <!-- Ảnh 2 -->
         <div class="gallery-item-show" onclick="openModal('./assets//img/002.png', 'Ảnh hình vuông')">
           <img class="gallery-cover" src="./assets//img/002.png" alt="Cover ảnh 2">
         </div>
-        <!-- Ảnh 3 -->
         <div class="gallery-item-show" onclick="openModal('./assets//img/003.png', 'Ảnh dọc')">
           <img class="gallery-cover" src="./assets//img/003.png" alt="Cover ảnh 3">
         </div>
         <div class="gallery-item-show" onclick="openModal('./assets//img/004.png', 'Ảnh dọc')">
           <img class="gallery-cover" src="./assets//img/004.png" alt="Cover ảnh 3">
         </div>
-       
         <div class="gallery-item-show" onclick="openModal('./assets//img/006.png', 'Ảnh dọc')">
           <img class="gallery-cover" src="./assets//img/006.png" alt="Cover ảnh 3">
         </div>
-     
-    
-        
+
+        <!-- Ảnh img010 -->
         <div class="gallery-item-show" onclick="openModal('./assets//img/img010.jpg', 'Ảnh dọc')">
           <img class="gallery-cover" src="./assets//img/img010.jpg" alt="Cover ảnh 3">
         </div>
-        
+
       </div>
     </div>
   </div>
 </section>
+
+
+
+
+
+
+<!-- Thêm phần modal vào HTML -->
+<div id="modal" class="modal">
+  <span class="close" onclick="closeModal()">&times;</span>
+  <div class="modal-content">
+               <img id="modal-img" class="modal-img" src="" alt="">
+  </div>
+  <a class="prev" onclick="changeImage(-1)">&#10094;</a>
+  <a class="next" onclick="changeImage(1)">&#10095;</a>
+</div>
+
          <!--=============== END Hình ảnh show zoom ===============-->
          <!--=============== CONTACT ===============-->
          <section class="contact section" id="contact">
